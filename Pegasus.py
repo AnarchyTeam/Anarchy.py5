@@ -110,7 +110,20 @@ helpMessage ="""
 """
 
 creatorMessage ="""
-
+ꍏꈤꍏꋪꉓꃅꌩ ꌗꍟ꒒ŦßꂦƬ
+╔════════════════════════
+║ Protection Keyword
+╠════════════════════════
+╠[卐]「 Qr:on/off 」
+╠[卐]「 Autocancel:on/off 」
+╠[卐]「 Autokick:on/off 」
+╠[卐]「 Contact:on/off 」
+╠[卐]「 Join:on/off 」
+╔════════════════════════
+║ Blacklist Keyword
+╠════════════════════════
+╠[卐]「 Ban 」
+╠[卐]「 Unban 」
 """
 
 KAC=[ki] 
