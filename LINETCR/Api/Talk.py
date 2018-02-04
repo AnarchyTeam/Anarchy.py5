@@ -21,7 +21,7 @@ class Talk:
   port = 443;
 
   UA = "Line/1.4.17"
-  LA = "CHROMEOS\t1.4.17\tChrome_Os\t"
+  LA = "DESKTOPWIN\t5.5.1.1.1590\tWINDOWS_NT\t8.0"
 
   authToken = None
   cert = None
