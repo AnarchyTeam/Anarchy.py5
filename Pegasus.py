@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Tolong jangan ubah mid creator || Hargai saya
+
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
@@ -21,163 +21,92 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage ="""
-┏━━ೋ• ❄ •ೋ━━━┓
- ❁Keyword For Selfbot❁
-┗━━ೋ• ❄ •ೋ━━━┛
+ꍏꈤꍏꋪꉓꃅꌩ ꌗꍟ꒒ŦßꂦƬ
+╔════════════════════════
+║ Keyword Selfbot V1
+╠════════════════════════
+╠[卐]「 Me 」
+╠[卐]「 Mid @ 」
+╠[卐]「 Ginfo 」
+╠[卐]「 Gcreator 」
+╠[卐]「 Gcreator:inv 」
+╠[卐]「 Creator 」
+╠[卐]「 Myname: 」
+╠[卐]「 Mybio: 」
+╠[卐]「 Copy @ 」
+╠[卐]「 Backup 」
+╠[卐]「 Restart 」
+╠[卐]「 Runtime 」
+╠[卐]「 Speedbot 」
+╠[卐]「 Recover 」
+╠[卐]「 Like 」
+╠════════════════════════
+║ Translate Keyword
+╠════════════════════════
+╠[卐]「 En-Id 」
+╠[卐]「 Id-En 」
+╠[卐]「 Id-Jp 」
+╠[卐]「 Id-Th 」
+╠════════════════════════
+║ Game Keyword
+╠════════════════════════
+╠[卐]「 Apakah 」
+╠[卐]「 Dimana 」
+╠[卐]「 Dosa @ 」
+╠[卐]「 Pahala @ 」
+╠[卐]「 Bisakah 」
+╠[卐]「 Berapa besar 」
+╠════════════════════════
+║ Group Keyword
+╠════════════════════════
+╠[卐]「 Setview 」
+╠[卐]「 Viewlastseen 」
+╠[卐]「 Getqr 」
+╠[卐]「 Buka 」
+╠[卐]「 Tutup 」
+╠[卐]「 Glist 」
+╠[卐]「 Gn: 」
+╠[卐]「 Kick:[MID] 」
+╠[卐]「 Invite:[MID] 」
+╠[卐]「 Bc: 」
+╠[卐]「 Removechat 」
+╠[卐]「 Tagall 」
+╠[卐]「 Biohazard 」
+╠════════════════════════
+║ Media Keyword
+╠════════════════════════
+╠[卐]「 Image:[Link] 」
+╠[卐]「 Searchimage 」
+╠[卐]「 Youtube 」
+╠[卐]「 Wiki 」
+╠[卐]「 Instagram 」
+╠[卐]「 Video 」
+╠[卐]「 Music 」
+╠[卐]「 Lyric 」
+╠[卐]「 Say-en 」
+╠[卐]「 Say-id 」
+╠[卐]「 Say-af 」
+╠[卐]「 Say-ko 」
+╠[卐]「 Say-ja 」
+╠[卐]「 Say-de 」
+╠════════════════════════
+║ Steal Keyword
+╠════════════════════════
+╠[卐]「 Steal name @ 」
+╠[卐]「 Steal bio @ 」
+╠[卐]「 Steal status @ 」
+╠[卐]「 Steal contact @ 」
+╠[卐]「 Steal cover @ 」
+╠[卐]「 Steal pict @ 」
+╠[卐]「 Steal mid @ 」
+╠[卐]「 Steal group pict 」
+╠[卐]「 Midpict: 」
+╠[卐]「 Info @ 」
+╠════════════════════════
+║ ꌗꀎᖘᖘꂦꋪƬ :
+║ ꍏꈤꍏꋪꉓꃅꌩ Ƭꍟꍏꎭ ßꂦƬꌗ
 
-[ # ] Keyword [ # ]
 
-♬「 Myhelp 」
-♬「 Creator 」
-♬「 Gcreator 」
-♬「 List group: 」
-♬「 Leave group: 」
-♬「 Cancel 」
-
-[ # ] Set command [ # ]
-
-♬「 Url:on/off 」
-♬「 Autojoin:on/off 」
-♬「 Autocancel:on/off 」
-♬「 Qr:on/off 」
-♬「 Autokick:on/off 」
-♬「 Contact:on/off 」
-
-[ # ] Command in Groups [ # ]
-
-♬「 Gift1-3 」
-♬「 Tag all/Mention all」
-♬「 Setview 」
-♬「 Viewseen 」
-♬「 Boom  @ 」
-♬「 Add all 」
-♬「 Recover 」
-♬「 Remove all chat 」
-♬「 Gn: [ name ] 」
-♬「 Kick: [ mid ] 」
-♬「 Invite: [ mid ] 」
-♬「 Welcome 」
-♬「 Bc: [ text ] 」
-♬「 Cancelall 」 
-♬「 Gurl 」
-♬「 Self Like 」
-♬「 Speedbot 」
-♬「 Ban 」
-♬「 Unban 」
-♬「 Ban  @ 」
-♬「 Unban  @ 」
-♬「 Banlist 」
-♬「 Kill ban 」
-♬「 Mid  @ 」
-♬「 Kernel 」
-♬「 random: [ jumlah ] 」
-♬「 Gcreator:inv 」
-♬「 Gcreator 」
-♬「 Tagall 」
-♬「 Kickall 」
-♬「 Reboot 」
-♬「 Runtime 」
-♬「 Blacklist  @  」
-
-[ # ] Profile Command [ # ]
-
-♬「 Myname: 」
-♬「 Mybio: 」
-♬「 Copy  @ 」
-♬「 Backup me 」 
-
-[ # ]  System Command [ # ]
-
-♬「 Ifconfig 」
-♬「 Kernel  」
-♬「 Cpu 」
-♬「 System 」
-♬「 Say 」
-
-[ # ] Audio Command [ # ]
-
-♬「 Say-en 」English
-♬「 Say-af  」Africans
-♬「 Say-ko 」Korean
-♬「 Say-id  」Indonesian
-♬「 Say-de 」Germany
-♬「 Say-ja  」Japan
-♬「 Say-pl  」Polish
-♬「 Music  」
-♬「 Lyric」
-
-[ # ] Stealing Command [ # ]
-
-♬「 Steal name @ 」
-♬「 Steal bio @ 」
-♬「 Steal status @ 」
-♬「 Steal contact @ 」
-♬「 Steal cover @ 」
-♬「 Steal pict @ 」
-♬「 Steal mid @ 」
-♬「 Steal group pict 」
-♬「 Midpict: 」
-♬「 Info @ 」
-♬「 Youtube 」
-♬「 Vidio 」
-♬「 Wiki 」
-♬「 Instagram 」
-
-[ # ] Transelate Command [ # ]
-
-♬「 Translate-idn 」
-♬「 Translate-eng 」
-♬「 Translate-japan 」
-♬「 Translate-thai」
-♬「 Spam [on/off] [jumlah] [text]」
-♬「 Image: (link) 」
-♬「 Searchimage 」
-
-[ # ] New Command [ # ]
-
-♬ 「Spam gift」
-♬ 「Spam sticker」
-♬ 「Random sticker」
-♬ 「Random gift」
-♬ 「Random number」
-♬ 「Spam toket」
-♬ 「Spam anu」
-
-[ # ] Chat command [ # ]
-
-♬ 「Bisakah 」
-♬ 「Dosa @」
-♬ 「Pahala @」
-♬ 「Dimana 」
-♬ 「Apakah 」
-♬ 「Besar cinta nama ke nama 」
-
-[ # ] Anu Command [ # ]
-
-♬ 「Pap cecan」
-♬ 「Pap toket」
-♬ 「Pap anu」
-♬ 「Pap pocong」
-♬ 「Pap kuntilanak」
-
-[ # ] Assist command [ # ]
-
-♬ 「Assist clone @」 
-♬ 「Assist backup 」
-♬ 「Assist spam @」
-♬ 「Assist name: 」
-♬ 「Assist bio: 」
-♬ 「Assist speed」
-♬ 「Assist join」
-♬ 「Assist out」
-
-→ Selfbot by: 
-http://line.me/ti/p/%40ntq3882j
-  ☬Ƥᴇ̶̮̟͈̣̖̰̩̹͈̾ͨ̑͑ɢ̶͎͚̥͎͔͕ͥ̿ᴀ̶̘̫͈̭͌͛͌̇̇̍s̶̪̭̱̼̼̉̈́ͪ͋̽̚ᴜ̶̟͎̲͕̼̲ͮͫͭ̋ͭ͛ͣ̈s̶̪̭̱̼̼̉̈́ͪ͋̽̚ ᴛ̶̘̟̼̉̈́͐͋͌̊ᴇ̶̮̟͈̣̖̰̩̹͈̾ͨ̑͑ᴀ̶̘̫͈̭͌͛͌̇̇̍ᴍ̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ʙ̶͎̣̫͈̥̗͒͌̃͑̔̾ͅᴏ̶̜̓̇ͫ̉͊ͨᴛ̶̘̟̼̉̈́͐͋͌̊
-
-┏━━ೋ• ❄ •ೋ━━━┓
-       ❁ Selfbot V 2  ❁    
-┗━━ೋ• ❄ •ೋ━━━┛
 """
 
 KAC=[ki] 
