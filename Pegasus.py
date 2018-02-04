@@ -65,6 +65,7 @@ helpMessage ="""
 ╠[卐]「 Buka 」
 ╠[卐]「 Tutup 」
 ╠[卐]「 Glist 」
+╠[卐]「 Leave group: 」
 ╠[卐]「 Gn: 」
 ╠[卐]「 Kick:[MID] 」
 ╠[卐]「 Invite:[MID] 」
@@ -105,7 +106,10 @@ helpMessage ="""
 ╠════════════════════════
 ║ ꌗꀎᖘᖘꂦꋪƬ :
 ║ ꍏꈤꍏꋪꉓꃅꌩ Ƭꍟꍏꎭ ßꂦƬꌗ
+╚═══════════════════════
+"""
 
+creatorMessage ="""
 
 """
 
@@ -499,7 +503,13 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Creator}
                 cl.sendMessage(msg)
-                
+
+            elif msg.text in ["Creator menu"]:
+               if msg.from_ in admin:
+                cl.sendText(msg.to,creatorMessage)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Creator}
+                cl.sendMessage(msg)                
 #--------------------------------------------------------
 #----------------------
             elif "Besar cinta" in msg.text:
@@ -538,15 +548,15 @@ def bot(op):
                 basa = random.choice(jawab2)
                 cl.sendText(msg.to,"Dosanya " + tanya + " adalah " + jawaban + " " + basa)
 #-----------------------------------------------
-            elif msg.text in ["List group"]:
+            elif msg.text in ["Glist"]:
                 gid = cl.getGroupIdsJoined()
                 h = ""
 		jml = 0
                 for i in gid:
 		    gn = cl.getGroup(i).name
-                    h += "♬【%s】\n" % (gn)
+                    h += "[₪]【%s】\n" % (gn)
 		    jml += 1
-                cl.sendText(msg.to,"======[List Group]======\n"+ h +"Total group: "+str(jml))
+                cl.sendText(msg.to,"Groups : \n"+ h +"Total group: "+str(jml))
 #--------------------------------------------------------
 	    elif "Leave group: " in msg.text:
 		ng = msg.text.replace("Leave group: ","")
@@ -740,9 +750,9 @@ def bot(op):
                 cl.sendImageWithURL(msg.to,jawaban)
 #-----------------------------------------------
                  #=======================================================
-            elif "Translate-eng " in msg.text:
+            elif "Id-en " in msg.text:
               if msg.from_ in admin:
-                txt = msg.text.replace("Translate-eng ","")
+                txt = msg.text.replace("Id-En ","")
                 try:
                     gs = goslate.Goslate()
                     trs = gs.translate(txt,'en')
@@ -750,9 +760,9 @@ def bot(op):
                     print '[Command] Translate EN'
                 except Exception as error:
                     cl.sendText(msg.to,(error))
-            elif "Translate-jp" in msg.text:
+            elif "Id-Jp " in msg.text:
               if msg.from_ in admin:
-                txt = msg.text.replace("Translate-jp ","")
+                txt = msg.text.replace("Id-jp ","")
                 try:
                     gs = goslate.Goslate()
                     trs = gs.translate(txt,'jp')
@@ -760,9 +770,9 @@ def bot(op):
                     print '[Command] Translate jp'
                 except Exception as error:
                     cl.sendText(msg.to,(error))
-            elif "Translate-th " in msg.text:
+            elif "Id-Th " in msg.text:
               if msg.from_ in admin:
-                txt = msg.text.replace("Translate-th ","")
+                txt = msg.text.replace("Id-Th ","")
                 try:
                     gs = goslate.Goslate()
                     trs = gs.translate(txt,'th')
@@ -770,9 +780,9 @@ def bot(op):
                     print '[Command] Translate th'
                 except Exception as error:
                     cl.sendText(msg.to,(error))
-            elif "Translate-idn " in msg.text:
+            elif "En-Id " in msg.text:
               if msg.from_ in admin:
-                txt = msg.text.replace("Translate-id ","")
+                txt = msg.text.replace("En-Id ","")
                 try:
                     gs = goslate.Goslate()
                     trs = gs.translate(txt,'id')
@@ -847,12 +857,12 @@ def bot(op):
 					group = cl.getGroup(msg.to)
 					path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
                                         cl.sendImageWithURL(msg.to,path)
-            elif msg.text in ["Ourl","Url:on"]:
+            elif msg.text in ["Buka"]:
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
                     X.preventJoinByTicket = False
                     cl.updateGroup(X)
-                    cl.sendText(msg.to,"Url Active")
+                    cl.sendText(msg.to,"Done")
                 else:
                     cl.sendText(msg.to,"Can not be used outside the group")
 #-------------------------------------------------------
@@ -916,11 +926,11 @@ def bot(op):
 #-----------------------------------------------
             elif msg.text in ["Join on","Autojoin:on"]:
                 wait["AutoJoin"] = True
-                cl.sendText(msg.to,"AutoJoin Active")
+                cl.sendText(msg.to,"Done")
 
             elif msg.text in ["Join off","Autojoin:off"]:
                 wait["AutoJoin"] = False
-                cl.sendText(msg.to,"AutoJoin inActive")
+                cl.sendText(msg.to,"Done")
 
 #--------------------------------------------------------
 #-----------------------------------------------
