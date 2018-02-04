@@ -43,19 +43,19 @@ class LINE:
     self.authToken = self.Talk.authToken
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'CHROMEOS\t1.4.17\tChrome_Os\t', 
+              'X-Line-Application': 'DESKTOPWIN\t5.5.1.1.1590\tWINDOWS_NT\t8.0', 
               'X-Line-Access': self.authToken, 
               'User-Agent': 'Line/1.4.17'
    }
     self.Poll = Poll(self.authToken)
-    #self.channel = channel.Channel(self.authToken)
-    #self.channel.login()
+    self.channel = channel.Channel(self.authToken)
+    self.channel.login()
 
-    #self.mid = self.channel.mid
-    #self.channel_access_token = self.channel.channel_access_token
-    #self.token = self.channel.token
-    #self.obs_token = self.channel.obs_token
-    #self.refresh_token = self.channel.refresh_token
+    self.mid = self.channel.mid
+    self.channel_access_token = self.channel.channel_access_token
+    self.token = self.channel.token
+    self.obs_token = self.channel.obs_token
+    self.refresh_token = self.channel.refresh_token
 
   """User"""
 
@@ -519,11 +519,8 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("=================[???????????????????????????????????????????s????????????????????????????s???????????? ???????????????????????????????????????????????????? ???????????????????????????????????]=================")
-      print("           Thanks for TCR and my friend")
-      print("====================================================")
+      print("Anarchy Sukses LOGIN")
       print("MID : " + prof.mid)
       print("NAME : " + prof.displayName)
       print("authToken :  " + self.authToken)
-      print("JANGAN LUPA ADD : http://line.me/ti/p/%40ntq3882j TERIMAKASIH")
       print("cert : " + self.cert if self.cert is not None else "")
