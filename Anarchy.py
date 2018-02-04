@@ -119,11 +119,52 @@ creatorMessage ="""
 ╠[卐]「 Autokick:on/off 」
 ╠[卐]「 Contact:on/off 」
 ╠[卐]「 Join:on/off 」
-╔════════════════════════
+╠════════════════════════
 ║ Blacklist Keyword
 ╠════════════════════════
 ╠[卐]「 Ban 」
 ╠[卐]「 Unban 」
+╠[卐]「 Ban @ 」
+╠[卐]「 Unban @ 」
+╠[卐]「 Blacklist @ 」
+╠[卐]「 Blacklist 」
+╠[卐]「 Kill ban 」
+╠[卐]「 Banlist 」
+╠════════════════════════
+║ Bot Keyword
+╠════════════════════════
+╠[卐]「Assist clone @」 
+╠[卐]「Assist backup 」
+╠[卐]「Assist spam @」
+╠[卐]「Assist name: 」
+╠[卐]「Assist bio: 」
+╠[卐]「Assist speed」
+╠[卐]「Assist join」
+╠[卐]「Assist out」
+╠════════════════════════
+║ New Keyword
+╠════════════════════════
+╠[卐]「 Ifconfig 」
+╠[卐]「 Kernel  」
+╠[卐]「 Cpu 」
+╠[卐]「 System 」
+╠[卐]「 Say 」
+╠[卐]「Spam gift」
+╠[卐]「Spam sticker」
+╠[卐]「Random sticker」
+╠[卐]「Random gift」
+╠[卐]「Random number」
+╠[卐]「Spam toket」
+╠[卐]「Spam anu」
+╠[卐]「Pap cecan」
+╠[卐]「Pap toket」
+╠[卐]「Pap anu」
+╠[卐]「Pap pocong」
+╠[卐]「Pap kuntilanak」
+╠════════════════════════
+║ ꌗꀎᖘᖘꂦꋪƬ :
+║ ꍏꈤꍏꋪꉓꃅꌩ Ƭꍟꍏꎭ ßꂦƬꌗ
+╚═══════════════════════
 """
 
 KAC=[ki] 
